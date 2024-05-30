@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Diplomata+SC&family=Kaushan+Script&family=Passion+One&family=Righteous&family=Sarala:wght@400;700&family=Sedan+SC&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Diplomata+SC&family=Kaushan+Script&family=Passion+One&family=Righteous&family=Sarala:wght@400;700&family=Sedan+SC&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte1: Verdana, Gereva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,8 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
+    font-size: 1em;
 }
 
 header {
@@ -19,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 
 header > p {
@@ -39,6 +53,12 @@ section {
     padding: 10vh 0vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 .normal {
@@ -49,11 +69,24 @@ section {
 .imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.473);
+    text-shadow: 1px 1px 0px black;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
